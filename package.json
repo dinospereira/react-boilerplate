@@ -1,25 +1,64 @@
 {
-  "name": "project-boilerplate",
-  "version": "0.1.0",
-  "description": "Boilerplate",
-  "main": "index.js",
-  "scripts": {
-    "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dinospereira/react-boilerplate.git"
-  },
-  "keywords": [],
-  "bugs": {
-    "url": "https://github.com/dinospereira/react-boilerplate/issues"
-  },
-  "homepage": "https://github.com/dinospereira/react-boilerplate#readme",
-  "devDependencies": {
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
-  }
+    "name": "project-boilerplate",
+    "version": "0.1.0",
+    "description": "Boilerplate",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack --config webpack.config.prod.js",
+        "dev": "webpack-dev-server --open --config webpack.config.dev.js",
+        "dev:hot": "npm run dev -- --hot",
+        "test": "jest",
+        "format": "pretty-quick",
+        "lint": "eslint ./"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "pretty-quick --staged && npm run lint && npm run test"
+        }
+    },
+    "author": "",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dinospereira/react-boilerplate.git"
+    },
+    "keywords": [],
+    "bugs": {
+        "url": "https://github.com/dinospereira/react-boilerplate/issues"
+    },
+    "homepage": "https://github.com/dinospereira/react-boilerplate#readme",
+    "devDependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.9.0",
+        "@babel/plugin-proposal-class-properties": "^7.8.3",
+        "@babel/preset-env": "^7.9.5",
+        "@babel/preset-react": "^7.9.4",
+        "@testing-library/jest-dom": "^5.5.0",
+        "@testing-library/react": "^10.0.3",
+        "babel-eslint": "^10.1.0",
+        "babel-loader": "^8.1.0",
+        "css-loader": "^3.5.2",
+        "eslint": "^6.8.0",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-react": "^7.19.0",
+        "html-webpack-plugin": "^4.2.0",
+        "husky": "^4.2.5",
+        "identity-obj-proxy": "^3.0.0",
+        "jest": "^25.4.0",
+        "prettier": "^2.0.5",
+        "pretty-quick": "^2.0.1",
+        "style-loader": "^1.1.4",
+        "webpack": "^4.43.0",
+        "webpack-bundle-analyzer": "^3.7.0",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.10.3",
+        "webpack-merge": "^4.2.2"
+    },
+    "dependencies": {
+        "@babel/polyfill": "^7.8.7",
+        "prop-types": "^15.7.2",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-hot-loader": "^4.12.20"
+    }
 }
