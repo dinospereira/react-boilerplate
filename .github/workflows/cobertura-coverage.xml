@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage lines-valid="12" lines-covered="2" line-rate="0.16670000000000001" branches-valid="6" branches-covered="1" branch-rate="0.16670000000000001" timestamp="1590395853111" complexity="0" version="0.1">
+  <sources>
+    <source>/Users/dino.pereira/projects/react-boilerplate-master/react-boilerplate</source>
+  </sources>
+  <packages>
+    <class name="App.js" filename="src/App.js" line-rate="1" branch-rate="0.5">
+      <methods>
+        <method name="(anonymous_0)" hits="1" signature="()V">
+          <lines>
+            <line number="4" hits="1"/>
+          </lines>
+        </method>
+      </methods>
+      <lines>
+        <line number="4" hits="1" branch="false"/>
+        <line number="5" hits="1" branch="false"/>
+      </lines>
+    </class>
+    <class name="DefaultErrorBoundary.js" filename="src/DefaultErrorBoundary.js" line-rate="0" branch-rate="0">
+      <methods>
+        <method name="(anonymous_0)" hits="0" signature="()V">
+          <lines>
+            <line number="13" hits="0"/>
+          </lines>
+        </method>
+        <method name="(anonymous_1)" hits="0" signature="()V">
+          <lines>
+            <line number="17" hits="0"/>
+          </lines>
+        </method>
+      </methods>
+      <lines>
+        <line number="5" hits="0" branch="false"/>
+        <line number="9" hits="0" branch="false"/>
+        <line number="14" hits="0" branch="false"/>
+        <line number="18" hits="0" branch="false"/>
+        <line number="19" hits="0" branch="false"/>
+        <line number="21" hits="0" branch="true" condition-coverage="0% (0/2)"/>
+      </lines>
+    </class>
+    <class name="index.js" filename="src/index.js" line-rate="0" branch-rate="0">
+      <methods>
+      </methods>
+      <lines>
+        <line number="8" hits="0" branch="true" condition-coverage="0% (0/2)"/>
+        <line number="9" hits="0" branch="false"/>
+        <line number="10" hits="0" branch="false"/>
+        <line number="13" hits="0" branch="false"/>
+      </lines>
+    </class>
+  </packages>
+</coverage>

@@ -3,5 +3,7 @@
 .AppleDouble
 .LSOverride
 
-node_modules
+node_modules/
+coverage/
 dist
+.env
